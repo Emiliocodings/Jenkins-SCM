@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building from SCM'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying from SCM'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing from SCM'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Releasing from SCM'
+            }
+        }
+    }
+}
