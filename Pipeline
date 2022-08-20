@@ -2,29 +2,29 @@ pipeline {
     agent any
 
     stages {
-        stage('Pipeline cloning') {
+        stage('Pipeline from SCM') {
             steps {
-                echo 'Hello World, cloned pipeline'
+                echo 'Hello World'
             }
         }
         stage('Build SCM Stage') {
             steps {
-                echo 'Building and cloned pipeline'
+                echo 'Building from SCM'
             }
         }
         stage('Deploy SCM Stage') {
             steps {
-                echo 'Deploying and cloned pipeline'
+                echo 'Deploying from SCM'
             }
         }
         stage('Test SCM Stage') {
             steps {
-                echo 'Testing and cloned pipeline'
+                echo 'Testing from SCM'
             }
         }
         stage('Release SCM Stage') {
             steps {
-                echo 'Releasing and cloned pipeline'
+                echo 'Releasing from SCM'
             }
         }
     }
